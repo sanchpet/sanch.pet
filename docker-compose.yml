@@ -1,0 +1,17 @@
+name: sanchpethub
+services:
+  sanchpethub:
+    container_name: sanchpethub
+    image: registry.gitlab.com/sanchpet/sanchpethub:latest
+    pull_policy: always
+    # ports:
+    #   - 1313:1313
+    networks:
+      - traefik
+    labels:
+      - "traefik.http.routers.sanchpethub.rule=Host(`sanchpet.su`)"
+      - "traefik.http.services.sanchpethub.loadbalancer.server.port=1313"
+
+networks:
+  traefik:
+    external: true
