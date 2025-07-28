@@ -1,3 +1,0 @@
-include:
-  - project: "sanchpet/devops-pipelines"
-    file: "common-docker-deploy/.gitlab-ci.yml"
