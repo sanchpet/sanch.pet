@@ -8,6 +8,6 @@ spec:
     app: sanchpet-website
   ports:
     - name: http
-      port: 1313
+      port: 8080
       protocol: TCP
       targetPort: http

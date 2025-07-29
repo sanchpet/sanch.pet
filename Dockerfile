@@ -1,5 +1,5 @@
 # Stage 1
-FROM floryn90/hugo:0.143.0-ext-alpine
+FROM floryn90/hugo:0.143.0-ext-alpine AS builder
 
 USER root
 
@@ -12,6 +12,8 @@ RUN hugo \
 
 ENV HUGO_ENV="production"
 
-EXPOSE 1313
-CMD ["server"]
-USER hugo
+FROM nginxinc/nginx-unprivileged:alpine
+
+COPY --from=builder /src/public /usr/share/nginx/html
+
+EXPOSE 8080

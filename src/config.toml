@@ -69,7 +69,7 @@ style = "github-dark"
   url = "https://linkedin.com/in/sanchpet/"
 
 [languages.en]
-languageName = ":uk:"
+languageName = ":us:"
 
 # Menu links
 [[languages.en.menu.main]]
@@ -84,3 +84,29 @@ languageName = ":uk:"
   name = "Projects"
   weight = 3
   url = "projects/"
+
+[languages.ru]
+languageName = ":ru:"
+title = "sanchpet - IT энтузиаст"
+
+[languages.ru.params]
+author = "Александр Петров - @sanchpet"
+info = "DevOps инженер и любознательный студент"
+description = "Личный сайт Александра Петрова"
+keywords = "блог,devops,девопс"
+
+[[languages.ru.menu.main]]
+name = "Обо мне"
+weight = 1
+url = "about/"
+
+[[languages.ru.menu.main]]
+name = "Блог"
+weight = 2
+url = "posts/"
+
+[[languages.ru.menu.main]]
+name = "Проекты"
+weight = 3
+url = "projects/"
+

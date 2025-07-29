@@ -20,16 +20,16 @@ spec:
     spec:
       containers:
       - name: website
-        image: sanchpet/sanch.pet:v0.0.4
+        image: sanchpet/sanch.pet:v0.0.5
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
-          containerPort: 1313
+          containerPort: 8080
           protocol: TCP
         livenessProbe:
           httpGet:
             path: /
-            port: 1313
+            port: 8080
           initialDelaySeconds: 5
           periodSeconds: 10
           timeoutSeconds: 5
@@ -37,14 +37,14 @@ spec:
         readinessProbe:
           httpGet:
             path: /
-            port: 1313
+            port: 8080
           initialDelaySeconds: 5
           periodSeconds: 10
           timeoutSeconds: 5
           failureThreshold: 3 
         resources:
           limits:
-            memory: 128Mi
+            memory: 100Mi
           requests:
-            cpu: 100m
-            memory: 128Mi
+            cpu: 10m
+            memory: 100Mi

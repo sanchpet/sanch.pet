@@ -17,7 +17,7 @@ spec:
               service:
                 name: sanchpet-website
                 port:
-                  number: 1313
+                  number: 8080
   tls:
     - hosts:
       - sanch.pet
