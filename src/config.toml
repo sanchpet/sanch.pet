@@ -96,14 +96,14 @@ description = "Личный сайт Александра Петрова"
 keywords = "блог,devops,девопс"
 
 [[languages.ru.menu.main]]
-name = "Обо мне"
+name = "Блог"
 weight = 1
-url = "about/"
+url = "posts/"
 
 [[languages.ru.menu.main]]
-name = "Блог"
+name = "Обо мне"
 weight = 2
-url = "posts/"
+url = "about/"
 
 [[languages.ru.menu.main]]
 name = "Проекты"

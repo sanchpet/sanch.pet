@@ -7,19 +7,9 @@ author = "sanchpet"
 +++
 
 - [whoami](#whoami)
-  - [RU](#ru)
-  - [EN](#en)
 - [Contacts](#contacts)
 
 ## whoami
-
-### RU
-
-ЯжDevOps и немного SRE. Поначалу карьеры был опыт в технической поддержке, эксплуатации, системном администрировании. Сейчас всё же охота погружаться в DevOps, также набирать экспертизу в разработке, ML, платформенной архитектуре.
-
-По чуть-чуть пытаюсь развивать свой «личный бренд», но не особо преуспел в этом.
-
-### EN
 
 I am DevOps engineer and a little bit SRE. At the beginning of career, I had experience in technical support, operation, and system administration. Now I want to dive into DevOps, as well as gain expertise in development, ML, and platform architecture.
 
