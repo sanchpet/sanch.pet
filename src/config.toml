@@ -3,8 +3,10 @@ title = "sanchpet - guy who loves tech"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
+enableEmoji = true
 
-pagination.pagerSize = 20
+[pagination]
+pagerSize = 6
 
 [services]
 [services.disqus]
@@ -26,6 +28,8 @@ style = "github-dark"
   favicon_16 = "/images/favicon-16x16.png"
 
   since = 2025
+
+  commit = "https://github.com/sanchpet/sanch.pet/tree/"
 
   enableTwemoji = true
 
@@ -64,16 +68,19 @@ style = "github-dark"
   weight = 4
   url = "https://linkedin.com/in/sanchpet/"
 
+[languages.en]
+languageName = ":uk:"
+
 # Menu links
-[[menu.main]]
+[[languages.en.menu.main]]
   name = "Blog"
   weight = 1
   url  = "posts/"
-[[menu.main]]
+[[languages.en.menu.main]]
   name = "About"
   weight = 2
   url = "about/"
-[[menu.main]]
+[[languages.en.menu.main]]
   name = "Projects"
   weight = 3
   url = "projects/"
