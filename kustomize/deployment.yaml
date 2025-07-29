@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: website
-        image: sanchpet/sanch.pet:v0.0.3
+        image: sanchpet/sanch.pet:v0.0.5
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
