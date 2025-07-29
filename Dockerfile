@@ -7,8 +7,10 @@ WORKDIR /src
 
 COPY ./src .
 
-RUN hugo \
-    && chown -R hugo:hugo /src
+RUN whoami && echo $(pwd) && ls -la && ls -la /src \
+    && hugo \
+    && chown -R hugo:hugo /src \
+    && ls -la /src/ && ls -la /src/public
 
 ENV HUGO_ENV="production"
 
