@@ -1,25 +1,30 @@
 +++
 title = "About"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
+description = "Whoami"
+date = "2025-07-29"
+aliases = ["about", "whoami", "contact"]
+author = "sanchpet"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+- [whoami](#whoami)
+  - [RU](#ru)
+  - [EN](#en)
+- [Contacts](#contacts)
 
-Hugo makes use of a variety of open source projects including:
+## whoami
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+### RU
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+ЯжDevOps и немного SRE. Поначалу карьеры был опыт в технической поддержке, эксплуатации, системном администрировании. Сейчас всё же охота погружаться в DevOps, также набирать экспертизу в разработке, ML, платформенной архитектуре.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+По чуть-чуть пытаюсь развивать свой «личный бренд», но не особо преуспел в этом.
 
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+### EN
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+I am DevOps engineer and a little bit SRE. At the beginning of career, I had experience in technical support, operation, and system administration. Now I want to dive into DevOps, as well as gain expertise in development, ML, and platform architecture.
+
+I'm trying to develop my "personal brand" a little bit, but I haven't been very successful in this.
+
+## Contacts
+
+You can write me via email address or in Telegram direct messages. Both can be found [on my GitHub](https://github.com/sanchpet).
