@@ -1,5 +1,5 @@
 # Stage 1
-FROM floryn90/hugo:0.142.0-ext-alpine
+FROM floryn90/hugo:0.143.0-ext-alpine
 
 USER root
 

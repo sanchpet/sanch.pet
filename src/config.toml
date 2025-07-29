@@ -1,5 +1,5 @@
-baseurl = "http://sanchpet.su"
-title = "Aleksandr Petrov (sanchpet) - tech blog"
+baseurl = "https://sanch.pet"
+title = "sanchpet - guy who loves tech"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -14,12 +14,12 @@ disqusShortname = "yourdiscussshortname"
 style = "github-dark"
 
 [params]
-  author = "Aleksandr Petrov (sanchpet)"
-  info = "Full Stack DevOps and Magician"
-  description = "John Doe's personal website"
+  author = "Aleksandr Petrov - @sanchpet"
+  info = "DevOps engineer & curious student"
+  description = "Aleksandr Petrov's personal website"
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.jpg"
-  gravatar = "petrov@petrovad.ru"
+  gravatar = "petrov@sanch.pet"
 
   faviconSVG = "/images/favicon.ico"
   favicon_32 = "/images/favicon-32x32.png"
@@ -57,7 +57,7 @@ style = "github-dark"
   name = "Telegram"
   icon = "fa-brands fa-telegram fa-2x"
   weight = 3
-  url = "https://t.me/sanchpet_work"
+  url = "https://t.me/sanchpet"
 [[params.social]]
   name = "LinkedIn"
   icon = "fa-brands fa-linkedin fa-2x"
@@ -73,3 +73,7 @@ style = "github-dark"
   name = "About"
   weight = 2
   url = "about/"
+[[menu.main]]
+  name = "Projects"
+  weight = 3
+  url = "projects/"
