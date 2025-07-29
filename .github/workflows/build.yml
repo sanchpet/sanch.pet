@@ -30,4 +30,4 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/sanch.pet:latest-dev, ${{ vars.DOCKERHUB_USERNAME }}/sanch.pet:${{ github.sha }}
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/sanch.pet:latest-dev
