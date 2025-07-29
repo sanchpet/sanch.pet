@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-nginx"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+  name: sanchpet-website
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: sanch.pet
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: sanchpet-website
+                port:
+                  number: 1313
+  tls:
+    - hosts:
+      - sanch.pet
+      secretName: sanch-pet-tls

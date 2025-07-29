@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sanchpet-website
+spec:
+  minReadySeconds: 3
+  revisionHistoryLimit: 5
+  progressDeadlineSeconds: 60
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 0
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: sanchpet-website
+  template:
+    metadata:
+      labels:
+        app: sanchpet-website
+    spec:
+      containers:
+      - name: website
+        image: sanchpet/sanch.pet:v0.0.3
+        imagePullPolicy: IfNotPresent
+        ports:
+        - name: http
+          containerPort: 1313
+          protocol: TCP
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 1313
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3 
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 1313
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3 
+        resources:
+          limits:
+            memory: 128Mi
+          requests:
+            cpu: 100m
+            memory: 128Mi
