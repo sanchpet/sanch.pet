@@ -8,7 +8,7 @@ WORKDIR /src
 COPY ./src .
 
 RUN hugo \
-    && chown -R hugo:hugo /src
+    && chown -R hugo:hugo /src && ls -la /src
 
 ENV HUGO_ENV="production"
 
