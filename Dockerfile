@@ -8,11 +8,10 @@ WORKDIR /src
 COPY ./src .
 
 RUN hugo \
-    && chown -R hugo:hugo /src && ls -la /src
+    && chown -R hugo:hugo /src
 
 ENV HUGO_ENV="production"
 
 EXPOSE 1313
-ENTRYPOINT ["hugo"]
 CMD ["server"]
 USER hugo
