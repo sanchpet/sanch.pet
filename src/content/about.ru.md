@@ -8,6 +8,7 @@ author = "sanchpet"
 
 - [whoami](#whoami)
 - [Связь со мной](#связь-со-мной)
+- [Привет](#привет)
 
 ## whoami
 
@@ -18,3 +19,5 @@ author = "sanchpet"
 ## Связь со мной
 
 Вы можете написать мне на электронную почту или в Telegram. И то и другое есть [на моём GitHub](https://github.com/sanchpet).
+
+## Привет
